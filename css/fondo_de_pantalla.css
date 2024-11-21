@@ -1,9 +1,9 @@
 body {
-    margin: 0;
+    margin: 2;
     height: 100vh;
-    background: linear-gradient(45deg, #ff7eb3, #d6596e, #7eff93);
-    background-size: 300% 300%; /* Hace que el degradado sea más amplio */
-    animation: gradientMove 10s ease infinite; /* Duración y tipo de animación */
+    background: linear-gradient(90deg, #a70146, #d6596e, #26b856);
+    background-size: 300% 300%; 
+    animation: gradientMove 10s ease infinite; 
   }
   
   @keyframes gradientMove {
@@ -16,22 +16,4 @@ body {
     100% {
       background-position: 0% 50%;
     }
-  }
-  .imagen {
-    width: 300px;
-    max-width: 100%; 
-    height: auto;
-    display: block; 
-    width: 100%;
-    max-width: 300px; 
-    height: 200px; 
-    overflow: hidden; 
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-  }
-
-  .imagen:hover {
-    transform: scale(1.1) rotate(10deg);
   }

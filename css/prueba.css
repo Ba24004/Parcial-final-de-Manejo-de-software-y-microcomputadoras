@@ -1,23 +1,69 @@
-* {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5a7b4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 h1 {
-    font-size: 2rem;
+    margin-top: 20px;
+    color: #333;
 }
 
-p {
-    font-size: 1rem;
-    text-align: justify;
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
-div {
-    background-color: white;
+img {
+    max-width: 90%;
+    height: auto;
+}
+
+.text-box {
+    position: relative;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
     border-radius: 10px;
-    margin: 0 auto;
-    padding: 2rem;
-    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    overflow: hidden;
 }
+
+.typing {
+    white-space: pre-wrap;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.text-box.visible {
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+area {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 400px) {
     html {
         font-size: 14px;

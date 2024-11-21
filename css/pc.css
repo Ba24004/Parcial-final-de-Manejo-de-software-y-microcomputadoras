@@ -44,8 +44,11 @@ nav ul li a#galeria{
     padding-left: 40px;
 }
     
-
-    /* PARTE SUPERIOR */
+img{
+    width: 100%;
+    height: auto;
+    float: none;
+}
 #encabezado{
     margin: 0px auto;
     width: 80%;
@@ -112,19 +115,16 @@ nav ul li a#galeria{
 .plan img{
     width: 100%;
 }
-    
-    /* Primer div, cuarto div */
+
     #contenido div:nth-child(3n+1){
     margin-left: 0px;   
 }
     
-    /* Tercer div, sexto div */
 #contenido div:nth-child(3n){
     margin-right: 0px;
     
 }
-    
-    /* CONTENIDO DE LA PAGINA PLANES */
+
     
 .planes{
     width: 94%;
@@ -151,7 +151,7 @@ nav ul li a#galeria{
     font-weight: bold;
 }
     
-    /* CONTENIDO DE LA PAGINA GALERIA*/
+
     
     
 #galeria .plan{
