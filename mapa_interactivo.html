@@ -3,47 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="estilo.css" >
   <link rel="stylesheet" href="css/fondo_de_pantalla.css">
-  <link rel="stylesheet" href="css/style.css" >
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
-  <title>Mapa Interactivo</title>
+
+  <title>Pagina Principal</title>
+
 </head>
 <body>
-</div>
-  <h1>Mapa de Centroamérica</h1>
-  <img src="img/imagen_centroamerica.webp" usemap="#image-map" style="width: 40%; height: auto; display: block">
-  <map name="image-map">
-    <area target="_self" alt="Guatemala" title="Guatemala" href="Guatemala.html" 
-          coords="24,92,86,155,75,56,58,44,48,46,54,34,104,38,77,41,67,36,94,38,81,86,69,80,76,78,88,80,96,99,98,116,110,112,87,69,96,54,90,53,77,28,61,28,117,101,124,108,92,129,99,143,66,161,43,162,12,143,14,119,8,130,10,110" shape="poly">
-    <area target="_self" alt="El Salvador" title="El Salvador" href="El_Salvador.html" 
-          coords="84,164,141,184,143,176,146,188,126,188,99,154,106,157,78,168,80,176" shape="rect">
-    <area target="_self" alt="Honduras" title="Honduras" href="Honduras.html" 
-          coords="238,152,132,110,268,128,256,116,240,100,193,105,114,130,159,172,180,162,159,158,205,157,174,183,129,154,120,146,123,137,248,127,228,102,149,102,163,102,286,127,300,124,261,100,259,107,268,107" shape="poly">
-    <area target="_self" alt="Nicaragua" title="Nicaragua" href="Nicaragua.html" 
-          coords="210,171,285,255,198,190,186,214,198,214,167,210,191,200,198,232,234,262,263,267,274,153,254,159,238,162,249,142,273,167,294,157,294,141,289,183,289,188,291,205,287,226" shape="poly">
-    <area target="_self" alt="Costa Rica" title="Costa Rica" href="Costa_rica.html" 
-          coords="254,296,312,334,239,289,224,301,238,315,232,280,255,282,313,349,298,345,294,361,315,367" shape="poly">
-    <area target="_self" alt="Panamá" title="Panamá" href="Panama.html" 
-          coords="331,357,405,377,410,342,432,343,451,349,473,354,497,369,490,375,478,389,505,384,487,401,511,392,376,388,398,398,352,337,348,344" shape="poly">
-    <area target="_self" alt="Belice" title="Belice" href="Belice.html" 
-          coords="111,24,134,64,135,13,128,16,132,7,139,7,113,77,124,74,108,70,108,55,108,85,115,85,106,80,137,51,136,39" shape="poly">
-  </map>
-  <div class="container">
-    <div class="text-box">
-      <h2 class="typing">Bienvenid@</h2>
-      <p class="typing">
-        Explora los países través de este mapa interactivo. 
-        Haz clic en cada país para descubrir más sobre su cultura, historia y 
-        lugares turísticos.
+  <header>
+    <div class="container">
+      <p class="Logo">Centro America </p>
+      <nav>
+        <a href="#mapas">Mapas</a>
+        <a href="#objetivos">Objetivo de la pagina</a>
+      </nav>
+    </div>
+  </header>
+  <section id="principal">
+    <div></div>
+    <h1>La biodiversidad cultural <br> e historica</h1>
+  </section>
+
+  <section id="mapas">
+    <div class="contenedor_de_imagen">
+      <h2>La belleza de Centro America</h2>
+      <p>
+        Seleccione un pais, para visulizar su belleza <br> en una galeria de fotograficas
+      </p>
+
+      <form action="Guatemala.html">
+        <button>Guatemala</button>
+      </form>
+      <form action="belice.html">
+        <button>Belice</button>
+      </form>
+      <form action="honduras.html">
+        <button>Honduras</button>
+      </form>
+      <form action="El_Salvador.html">
+        <button>EL Salvador</button>
+      </form>
+      <form action="Nicaragua.html">
+        <button>Nicaragua</button>
+      </form>
+      <form action="Costa_Rica.html">
+        <button>Costa Rica</button>
+      </form>
+      <form action="Panama.html">
+        <button>Panama</button>
+      </form>
+    </div>
+    
+  </section>
+  
+  <section id="objetivos">
+    <div id="informativos">
+      <h2>Objetivos</h2>
+        
+          <h3>
+            Principal objetivo
+            
+          </h3>
+          <p>
+            Crear una página web que inspire y promueva el descubrimiento de la riqueza natural, cultural y <br>turística de Centroamérica, destacando sus paisajes únicos, <br>su biodiversidad incomparable y la autenticidad de sus destinos, para fomentar el turismo sostenible y <br>el aprecio por la belleza de la región.
+          </p>
+        </div>
+        <div id="informativos">
+          <h3>
+            Objetivos a largo plazo
+          </h3>
+          <p>
+            Logramos crear una página web atractiva y funcional que destaca <br>
+            los paisajes más emblemáticos de Centroamérica, promoviendo el turismo y fomentando el <br>
+            orgullo por la riqueza natural y cultural de la región. Además, este proyecto permitió aprender y
+            <br> aplicar nuevas habilidades en desarrollo web con diseño responsivo
+          </p>
+
+        </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; Marjorie y Rosa 2024
+
       </p>
     </div>
-  </div>
-
-<script>
-  window.onload = function() {
-    $('map').imageMapResize();
-  };
-</script>
+  </footer>
 
 </body>
 
